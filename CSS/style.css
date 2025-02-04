@@ -171,33 +171,9 @@
     display: inline-block;
   }
   
-  .underline {
-    position: relative;
-    height: 4px;
-    background-color: transparent;
-    overflow: hidden;
-  }
+
+ 
   
-  .underline span {
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    animation: moveUnderline 2s linear infinite;
-  }
-  
-  @keyframes moveUnderline {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-  }
   .search-container {
     display: flex;
     justify-content: space-between;

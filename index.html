@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  <style>
+   
+.details {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: left;
+    gap: 26%;
+    overflow: hidden;
+    min-height: 150px;
+
+    
+}
+
+
+
+
+  </style>
+   
+</head>
+<body>
+    <h1 class="webApp">Weather WebApp</h1>
+    <main>
+        <div class="card">
+            <div class="search-container">
+                <div class="search">
+                    <input type="text" placeholder="Enter your City name..." spellcheck="false">
+                    <button><img src="images/search.png" alt="Search"></button>
+                </div>
+                <div class="unit-toggle">
+                    <button id="toggleCelsius" class="unit-btn active">°C</button> 
+                    | 
+                    <button id="toggleFahrenheit" class="unit-btn">°F</button>
+                </div>
+            </div>
+            <div class="error">
+                <p id="errorMessage">Invalid city name</p>
+            </div>
+            <div class="weather">
+                <div class="data-middle">
+                <div class="rounded-circle">
+                     <img src="images/rain.png" class="weather_icon" alt="Weather Icon">
+               
+                 <h2 class="conditaion">Clear</h2>
+                <h3 class="temp">22°C</h3>
+                </div>
+               <div class="city-card">
+                     <span class="city">New York </span>
+                   <span class="country ">USA</span>
+                
+            </div>
+             </div>
+             
+        
+                <div class="details">
+                    
+                    <div class="col">
+                        <img src="images/Humidity.png" alt="Humidity Icon">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" alt="Wind Icon">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+          
+            
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+    <script src="JS/toggle.js"></script>
+</body>
+</html>

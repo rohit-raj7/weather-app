@@ -348,8 +348,10 @@
         align-items: center;
         padding: 10px;
       min-height: 120px;
+     
    
     }
+
   
     .rounded-circle h2 {
       font-size: 1rem;
@@ -378,6 +380,9 @@
     .details .col {
       width: 80%;
       height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   .col p{
     font-size: 13px;

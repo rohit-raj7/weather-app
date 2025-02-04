@@ -343,7 +343,7 @@
       height: 120px;
     }
     .details{
-      gap: 20%;
+      gap: 10%;
         flex-direction: row;
         align-items: center;
         gap: 10px;

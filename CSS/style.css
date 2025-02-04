@@ -322,7 +322,7 @@
     border:1px solid rgba(70, 175, 175, 0.177);
     box-shadow: 
       0px 15px 25px rgba(66, 161, 190, 0.36), 
-      inset 0px 0px 15px rgba(100, 196, 220, 0.43), 
+      inset 0px 0px 15px rgba(100, 196, 220, 0.43),  
       inset -8px -8px 20px rgba(22, 43, 233, 0.44); 
     color: white;
     font-family: Arial, sans-serif;
@@ -334,7 +334,7 @@
     font-size: 1.4rem;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 468px) {
     .webApp{
       margin-bottom: 1rem;
     }
@@ -346,6 +346,8 @@
       gap: 10%;
         flex-direction: row;
         align-items: center;
+        padding: 10px;
+      min-height: 120px;
    
     }
   
@@ -374,15 +376,15 @@
   
   
     .details .col {
-      width: 90%;
-      height: 80px;
+      width: 80%;
+      height: 70px;
     }
   .col p{
-    font-size: 15px;
+    font-size: 13px;
     
   }
    .col img{
-    width:32px;
+    width:30px;
    }
   
     .card {

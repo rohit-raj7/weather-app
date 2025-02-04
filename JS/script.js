@@ -86,10 +86,10 @@ function updateWeather(data) {
         weatherIcon.src = "images/mist.png";
         cardImg.style.backgroundImage = 'url("https://i.pinimg.com/originals/9c/ee/a5/9ceea5cc05195c4dd13cdafe00e37230.gif")';
     }
-    //  else if (data.weather[0].main === "Haze") {
-    //     weatherIcon.src = "images/drizzle.png";
-    //     cardImg.style.backgroundImage = 'url("images/9vZL.gif")';
-    // }
+     else if (data.weather[0].main === "Haze") {
+        weatherIcon.src = "images/drizzle.png";
+        cardImg.style.backgroundImage = 'url("images/9vZL.gif")';
+    }
 
     document.querySelector(".error").style.display = "none";  
     document.querySelector(".weather").style.display = "block";  
